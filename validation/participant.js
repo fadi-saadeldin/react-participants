@@ -10,6 +10,10 @@ module.exports = function validateParticipantInput(data) {
   if (!Validator.isEmail(data.email)) {
     errors.email = 'Email is invalid';
   }
+  if (!Validator.isNumeric(data.phone)) {
+    errors.phone = 'Phone is invalid ';
+  }
+  
   if (Validator.isEmpty(data.name)) {
     errors.name = ' Fullname is required';
   }

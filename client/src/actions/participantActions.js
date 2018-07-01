@@ -66,7 +66,6 @@ export const createParticipant = (participantData) => dispatch => {
 
 // Edit Participant
 export const editParticipant = (participantData) => dispatch => {
-  console.log(participantData)
   axios
     .post(`/api/participant/${participantData.id}`, participantData)
       .then(res => dispatch(getParticipants())

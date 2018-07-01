@@ -41,7 +41,6 @@ class ParticipantItem extends Component {
     this.props.editParticipant(participantData);
   }
   onDeleteClick(id) {
-    console.log(id);
     this.props.deleteParticipant(id);
   }
   onChange(e) {

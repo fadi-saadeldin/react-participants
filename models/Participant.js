@@ -19,10 +19,6 @@ date: {
     type: Date,
     default: Date.now
 },
-sorting: {
-    type: Number
-}
-
 });
 
 module.exports=Participant=mongoose.model('participants',ParticipantSchema);
